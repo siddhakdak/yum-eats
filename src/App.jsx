@@ -1,12 +1,26 @@
 import "./App.css";
+import Categories from "./components/Categories";
+import Delivery from "./components/Delivery";
+import Featured from "./components/Featured";
+import Footer from "./components/Footer";
+import Meal from "./components/Meal";
+import NewsLetter from "./components/NewsLetter";
+import TopNav from './components/TopNav'
+import TopPicks from "./components/TopPicks";
+
 
 function App() {
   return (
-    <main className="flex justify-center gap-4 flex-col min-h-screen">
-      <h1 className="text-3xl text-center font-bold underline">React & Tailwind CSS Starter Pack</h1>
-      <p className="text-center text-xl">This is a starter pack for React & Tailwind CSS projects.</p>
-      <img src="https://bit.ly/3wsmzTy" alt="meme" className="mx-auto" />
-    </main>
+    <div className="App">
+      <TopNav/>
+      <Featured/>
+      <Delivery/>
+      <TopPicks/>
+      <Meal/>
+      <Categories/>
+      <NewsLetter/>
+      <Footer/>
+    </div>
   );
 }
 
